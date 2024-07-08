@@ -1,0 +1,132 @@
+/* style are First_Mobile */
+
+/* root */
+:root{
+    --white : #F7F7F7;
+    --primary : #6C63FF;
+    --dark : #252525;
+    --primaryHover : #534CC2;
+    --complited : #6a6a6a;
+}
+/* status styles */
+.complited{
+    color: var(--complited);
+}
+/* global styles area */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* main_container area */
+.main_container{
+    text-align: center;
+}
+/* header area */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 10vh;
+    background: var(--primary);
+    color: var(--white);
+}
+/* main area */
+.main{
+    padding: 0px 40px;
+}
+/* input section area */
+.input_section{
+    padding: 20px 0px;
+}
+.input{
+    width: 70%;
+    border: solid 1px var(--primary);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.input:focus{
+    outline: none;
+    background: var(--white);
+}
+.add_button{
+    width: 20%;
+    padding: 10px 10px;
+    border: none;
+    background: var(--primary);
+    border-radius: 5px;
+    transition: all .2s;
+    cursor: pointer;
+    color: var(--white);
+}
+.add_button:hover{
+    background: var(--primaryHover);
+}
+/* todo section area */
+.todo_area{
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo_area ~ hr{
+    background: var(--primary);
+}
+/* todo content styles */
+.todo_content{
+    color: var(--dark);
+    text-align: left;
+}
+.todo_content{
+    text-transform: capitalize;
+}
+/* todo buttons */
+.todo_actions{
+    display: flex;
+    align-items: center;
+}
+/* edit action */
+.edit_button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+/* trash action */
+.trash_button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* check action */
+.check_button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/* *********** */
+/* responsive area */
+@media screen and ( min-width : 640px ){
+    /* input and add button styles */
+    .main{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .input{
+        padding: 15px 10px;
+    }
+    .add_button{
+        padding: 15px 10px;
+    }
+    /* todo styles */
+    .todo_area{
+        padding: 20px 30px;
+    }
+}
