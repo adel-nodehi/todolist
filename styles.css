@@ -1,5 +1,4 @@
 /* style are First_Mobile */
-
 /* root */
 :root{
     --white : #F7F7F7;
@@ -11,7 +10,21 @@
 /* status styles */
 .complited{
     color: var(--complited);
+    text-decoration: line-through;
 }
+.task{
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.task:focus{
+    outline: none;
+}
+.focus{
+    color: var(--primary);
+}
+
 /* global styles area */
 *{
     padding: 0;
