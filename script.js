@@ -65,10 +65,10 @@ function appendButton(todoSection , parent , type , buttonElement , buttonClass 
   // buttons eventListener
   buttonElement.addEventListener('click' , () => {
 
-    if(type == 'delete'){
+    if(type === 'delete'){
       todoSection.remove()
 
-    }else if(type == 'edit'){
+    }else if(type === 'edit'){
       child.src = './assets/icons/edit_complited/check2-all.svg';
       todo_container.removeAttribute('readonly','readonly');
       todo_container.focus();
@@ -81,7 +81,7 @@ function appendButton(todoSection , parent , type , buttonElement , buttonClass 
 
       })  
 
-    }else if(type = 'complite'){
+    }else if(type === 'complite'){
       todo_container.classList.add('complited')
     }
   })
